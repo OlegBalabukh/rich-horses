@@ -1,0 +1,116 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Converter UA</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	
+    <div class = 'container'>
+    	<div class = 'inner'>
+    		<h3 class = 'text-center'> CURRENCY CONVERTER UA</h3>
+            <div class = "topFields">
+
+            	<div class = 'inline'>
+            		<h3>Bank</h3>
+            		<div>
+            			<select id = 'bank' class = 'form-control-bank'>
+            				<option val='PB'>Privat Bank</option>            				
+            			</select>
+            		</div>            		
+            	</div>
+
+    			<div class = 'inline inline-amount'>
+    				<h3>Amount</h3>
+    				<div><input type="text" class = 'form-control-amount' id = 'amount'></div>
+    			</div>
+    	    </div>   			
+
+    			
+    			<div class = 'inline'>
+    				<div><h3 class = 'inline1'>Currency:</h3><span class = 'inline1'></span></div>
+    				<div>
+    					<select id = 'chooseCurrency'>
+    						<option val='USD'>USD</option>
+    						<option val='EUR'>EUR</option>
+    						<option val='RUR'>RUR</option>
+    						<option val='BTC'>BTC</option>    						
+    					</select>
+    				</div>
+    			</div>
+
+    			<div class = 'inline'>
+    				<div><input type="radio" value="buy" name="group1" id = "buy" checked="checked">Buy</div>
+    				</br>
+    				<div><input type="radio" value="sale" name="group1" id = "sale">Sale</div>
+    			</div>
+    			<!--
+    			<div class = 'inline'>
+    				<div><h3 class = 'inline2'>To:</h3> <span  class = 'inline2' id = 'toCurrency'></span></div>
+    				<div><select id = 'to'></select></div>
+    			</div>
+    		    -->
+    			
+
+    			<div id = 'print'><button id = 'btn'>Result</button> : <span id = 'result'></span></div>
+    		
+    	</div>
+    </div>
+   
+</body>
+</html>
+
+<style>
+    .text-center {
+    	text-align: center;
+    	margin-top: -5px
+    }
+
+	.container {
+		margin: 0 auto;
+		width: 350px;
+		background-color:lightblue;
+		border: 3px solid black;		
+		margin-top: 2%;
+	}
+
+	.form-control-bank {
+		width: 120px;
+	}
+
+	.form-control-amount {
+		width: 100px;		
+	}
+
+	#from, #to, .form-control-bank, .form-control-amount, #btn {
+		padding: 5px;
+	}
+
+	.inner {
+		border: 3px solid white;
+		padding: 5%;
+	}
+    
+	.inline, .inline1, .inline2 {
+		display: inline-block;		
+	}  
+    
+	.inline-amount {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	#print {
+		margin-top: 20px;		
+	}
+
+	span {
+		margin-left: 5px;
+	}
+
+	.btn {
+
+	}
+</style>
+
+<script src="converter2.js"></script>
